@@ -1,0 +1,65 @@
+Projekt 2: Sprach-Werkstatt
+Ein Tool das beim Schreiben hilft – Texte umformulieren, Fehler erkennen, Stil anpassen und zwischen Sprachen übersetzen.
+Pipelines: text-generation + fill-mask + translation + sentiment-analysis
+Funktionen:
+    Tab 1 „Umformulieren“: Text eingeben, Stil wählen (formell/informell/einfach/wissenschaftlich), umformulierten Text erhalten
+    Tab 2 „Wort-Vorschläge“: Satz mit [MASK] eingeben, Modell schlägt passende Wörter vor (mit Wahrscheinlichkeiten)
+    Tab 3 „Übersetzer“: Deutsch nach Englisch (und umgekehrt) mit Zusammenfassung der Übersetzung
+    Ton-Check: Sentiment-Analyse des geschriebenen Texts („Klingt dein Text positiv genug?“)
+
+CSS-Anforderung: Schreibtisch/Editor-Design (heller Hintergrund, Schreibmaschinen-Font für Output,Seitenleiste mit Tools)
+
+Bonus: History der Umformulierungen mit State speichern
+
+Technisch (Muss)
+Mindestens 3 verschiedene HuggingFace Pipelines kombiniert
+gr.Blocks mit mindestens 2 Tabs oder Bereichen
+gr.State für mindestens ein Feature (History, Punktestand, Session-Daten)
+Custom CSS mit mindestens: eigenem Farbschema, Hover-Effekten, gestylten Buttons
+Error Handling: Leere Eingaben, zu kurze Texte etc. abfangen
+Code ist sauber strukturiert und kommentiert
+
+Design (Muss)
+Konsistentes Farbschema (nicht Standard-Grau!)
+Responsive Layout mit gr.Row/gr.Column
+Benutzerfreundlich: Klare Labels, Placeholder-Texte, Hilfe-Texte
+Kein Design-Bruch: Alle Tabs/Bereiche passen zusammen
+
+Präsentation (5 Minuten)
+Live-Demo der App
+Kurze Erklärung: Welche Pipelines? Welche Gradio-Features?
+Was war die größte Herausforderung?
+
+
+Bewertung
+Note 4 – Grundanforderungen erfüllt
+App startet ohne Fehler
+Mindestens 2 Pipelines funktionieren
+Grundlegendes Gradio-Interface vorhanden
+Minimales Styling
+
+Note 3 – Gute Umsetzung
+Alle Pipelines funktionieren und sind sinnvoll integriert
+Sauberes Layout mit Tabs/Bereichen
+CSS ist durchdacht und konsistent
+Error Handling vorhanden
+
+Note 2 – Sehr gute Umsetzung
+Alle Anforderungen von Note 3
+State wird sinnvoll eingesetzt
+Professionelles CSS-Design mit Hover-Effekten und Animationen
+Benutzerfreundliche App mit hilfreichen Texten und Feedback
+Code ist gut strukturiert und dokumentiert
+
+Note 1 – Ausgezeichnete Umsetzung
+Alle Anforderungen von Note 2
+Bonus-Features implementiert
+Herausragendes Design
+Kreative Lösungen über die Vorgaben hinaus
+Saubere Code-Qualität (Docstrings, keine Wiederholungen)
+
+Abgabe
+Was muss abgegeben werden?
+1. Jupyter Notebook (.ipynb) – lauffähig, mit Markdown-Erklärungen
+2. 3 Screenshots der laufenden App (verschiedene Tabs/Zustände)
+3. Kurze Doku (im Notebook als Markdown, 5–10 Sätze): Was macht die App? Welche Modelle? Was war schwierig?

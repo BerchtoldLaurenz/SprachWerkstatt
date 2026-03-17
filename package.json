@@ -1,0 +1,28 @@
+{
+  "name": "sprachwerkstatt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CCIT Semesterprojekt: Gradio + Jupyter Tool fuer Umformulieren, Fill-Mask, Uebersetzen und Ton-Check.",
+  "scripts": {
+    "jupyter:notebook": "jupyter notebook",
+    "jupyter:lab": "jupyter lab",
+    "install:py": "pip install -r requirements.txt"
+  },
+  "python": {
+    "requiredVersion": ">=3.10",
+    "requiredPackages": [
+      "gradio>=5.0.0",
+      "transformers>=4.45.0",
+      "torch>=2.2.0",
+      "sentencepiece>=0.2.0",
+      "accelerate>=0.34.0",
+      "pandas>=2.2.0",
+      "numpy>=1.26.0",
+      "matplotlib>=3.8.0",
+      "seaborn>=0.13.0",
+      "scikit-learn>=1.4.0",
+      "jupyter>=1.0.0",
+      "notebook>=7.0.0"
+    ]
+  }
+}
